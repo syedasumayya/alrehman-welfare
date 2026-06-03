@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Ticker Banner */}
+      {/* Ticker */}
       <div className="bg-red-600 text-white text-xs font-semibold overflow-hidden py-2">
         <div className="flex gap-16 whitespace-nowrap animate-ticker">
           {[...Array(2)].map((_, i) => (
@@ -85,7 +85,8 @@ export default function Header() {
                 {l.label}
               </Link>
             ))}
-            <Link href="/donate" className="bg-navy text-white text-center py-2 rounded text-sm font-semibold mt-2">
+            <Link href="/donate"
+              className="bg-navy text-white text-center py-2 rounded text-sm font-semibold mt-2">
               Donate Now
             </Link>
           </div>
