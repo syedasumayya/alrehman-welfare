@@ -21,18 +21,7 @@ export default function Header() {
       <div className="bg-red-600 text-white text-xs font-semibold overflow-hidden py-2">
         <div className="flex gap-16 whitespace-nowrap animate-ticker">
           {[...Array(2)].map((_, i) => (
-            <span key={i} className="flex gap-16">
-              <span>🇵🇸 Stand With Palestine</span>
-              <span className="text-red-300">✦</span>
-              <span>Youth-Led. Purpose-Driven.</span>
-              <span className="text-red-300">✦</span>
-              <span>From Pakistan With Solidarity</span>
-              <span className="text-red-300">✦</span>
-              <span>Unity · Compassion · Action</span>
-              <span className="text-red-300">✦</span>
-              <span>Every Rupee Makes a Difference</span>
-              <span className="text-red-300">✦</span>
-            </span>
+           <><span>🌍 Al Rehman Welfare</span><span className="text-red-300">✦</span><span>Helping Orphans & Needy Families</span><span className="text-red-300">✦</span><span>Pakistan & Worldwide</span><span className="text-red-300">✦</span><span>Unity · Compassion · Action</span><span className="text-red-300">✦</span><span>Every Rupee Changes a Life</span><span className="text-red-300">✦</span></>
           ))}
         </div>
       </div>
@@ -60,17 +49,16 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-
-          <div className="hidden md:flex items-center gap-2">
-            <Link href="/donate"
-              className="bg-navy text-white px-4 py-2 rounded text-sm font-semibold hover:bg-navy-mid transition-all hover:-translate-y-0.5">
-              Donate 🤍
-            </Link>
-            <Link href="/donate"
-              className="bg-blue-700 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-blue-600 transition-all hover:-translate-y-0.5">
-              Donate Pakistan
-            </Link>
-          </div>
+<div className="hidden md:flex items-center gap-2">
+  <Link href="/donate"
+    className="bg-navy text-white px-4 py-2 rounded text-sm font-semibold hover:bg-navy-mid transition-all hover:-translate-y-0.5">
+    Donate 🤍
+  </Link>
+  <Link href="/volunteer"
+    className="bg-green-600 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-700 transition-all hover:-translate-y-0.5">
+    Volunteer 
+  </Link>
+</div>
 
           <button className="md:hidden text-gray-700 text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? '✕' : '☰'}

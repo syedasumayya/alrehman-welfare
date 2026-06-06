@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import NewsletterPopup from '@/components/layout/NewsletterPopup'
 
 export const metadata: Metadata = {
   title: 'Al Rehman Welfare — Helping Orphans & Families',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <NewsletterPopup />
       </body>
     </html>
   )
