@@ -6,44 +6,12 @@ const socials      = ['f', 'X', '▶', '◎', 'in', '♪']
 const pages        = ['Home', 'Projects', 'About Us', 'Donate', 'Contact']
 const donationCats = ['Food Donation', 'Medical Aid', 'Orphan Sponsorship', 'Education Fund', 'Sadqa e Jariah', 'Zakat']
 
-const quickDonate = [
-  { title: 'Food Donation', desc: 'Provide meals for families in Gaza, starting at PKR 300.' },
-  { title: 'Sadqa / Zakat', desc: 'Donate your Sadqa to help struggling families, from PKR 1,000.' },
-  { title: 'Medical Aid',   desc: 'Fund medicine and first-aid for injured Palestinians.' },
-]
 
 export default function Footer() {
   const [amounts, setAmounts] = useState(['', '', ''])
 
   return (
     <footer>
-      {/* Quick Donate Bar */}
-      <div className="bg-sky-500 px-6 py-8 rounded-t-2xl">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-          {quickDonate.map((item, i) => (
-            <div key={item.title}>
-              <div className="text-white font-bold text-lg mb-1">{item.title}</div>
-              <div className="text-white/80 text-sm mb-3 leading-relaxed">{item.desc}</div>
-              <div className="flex">
-                <input
-                  type="number"
-                  placeholder="PKR  Enter amount"
-                  value={amounts[i]}
-                  onChange={e => {
-                    const next = [...amounts]
-                    next[i] = e.target.value
-                    setAmounts(next)
-                  }}
-                  className="flex-1 bg-white text-gray-600 text-sm px-3 py-2.5 rounded-l outline-none placeholder-gray-400"
-                />
-                <button className="bg-green-600 hover:bg-green-700 text-white text-xs font-bold uppercase tracking-wide px-4 py-2.5 rounded-r transition-colors whitespace-nowrap">
-                  Donate →
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* Main Footer */}
       <div className="bg-gray-900 px-6 py-14">

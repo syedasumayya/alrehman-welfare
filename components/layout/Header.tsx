@@ -68,7 +68,7 @@ export default function Header() {
             </Link>
             <Link href="/donate"
               className="bg-blue-700 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-blue-600 transition-all hover:-translate-y-0.5">
-              Donate USA
+              Donate Pakistan
             </Link>
           </div>
 

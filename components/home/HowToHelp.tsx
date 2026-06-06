@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
 const items = [
-  { icon: '💰', title: 'Donate Funds',     desc: 'Every rupee goes directly to verified aid.',               href: '/donate',                              cta: 'Donate Now' },
-  { icon: '👥', title: 'Volunteer',         desc: 'Join our youth network and help run campaigns.',           href: '/#contact',                            cta: 'Join Us' },
-  { icon: '📣', title: 'Spread Awareness', desc: 'Follow us, share campaigns, keep Palestinian voices alive.', href: 'https://instagram.com/alrehmanwelfare', cta: 'Follow Us' },
+  { icon: '💰', title: 'Donate Funds',       desc: 'Every rupee funds food, medicine, education, and shelter for families in need.',    href: '/donate',  cta: 'Donate Now' },
+  { icon: '👶', title: 'Sponsor a Child',     desc: 'Give an orphan a stable future — sponsor their monthly food, clothes, and school.', href: '/donate',  cta: 'Sponsor Now' },
+  { icon: '🤝', title: 'Volunteer With Us',   desc: 'Join our youth team on the ground. Help distribute aid, run drives, and more.',     href: '/contact', cta: 'Get Involved' },
 ]
 
 export default function HowToHelp() {
@@ -12,7 +12,7 @@ export default function HowToHelp() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <div className="text-yellow-300 text-xs font-bold uppercase tracking-widest mb-2">Get Involved</div>
-          <h2 className="font-display text-4xl font-bold text-white">Three Ways to Help</h2>
+          <h2 className="font-display text-4xl font-bold text-white">Three Ways to Make a Difference</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {items.map(item => (

@@ -1,8 +1,8 @@
 const values = [
-  { icon: '🤝', name: 'Unity',      desc: 'One ummah, one purpose, one voice.' },
-  { icon: '❤️', name: 'Compassion', desc: 'Every action driven by sincere care.' },
-  { icon: '🎯', name: 'Target',     desc: 'Clear goals, measurable impact.' },
-  { icon: '📢', name: 'Action',     desc: 'We mobilize, raise, and deliver.' },
+  { icon: '🤝', name: 'Unity',       desc: 'Together as one community, supporting those left behind.' },
+  { icon: '❤️', name: 'Compassion',  desc: 'Every action guided by genuine care for the vulnerable.' },
+  { icon: '🎯', name: 'Impact',      desc: 'Focused programs with real, measurable change on the ground.' },
+  { icon: '📢', name: 'Advocacy',    desc: 'Raising voices for orphans, widows, and needy families.' },
 ]
 
 export default function ValuesSection() {
@@ -14,7 +14,7 @@ export default function ValuesSection() {
         </div>
         <h2 className="font-display text-4xl font-bold text-navy-dark mb-3">What Drives Us</h2>
         <p className="text-gray-500 mb-10 max-w-lg leading-relaxed">
-          Built on four pillars that guide every campaign, every donation, every action.
+          Four pillars that shape every program, every campaign, and every act of service we undertake.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           {values.map(v => (
