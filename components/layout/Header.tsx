@@ -8,7 +8,7 @@ const navLinks = [
   { label: 'Projects', href: '/projects' },
   { label: 'About Us', href: '/about' },
   { label: 'Donate',   href: '/donate' },
-  { label: 'Contact',  href: '/#contact' },
+  { label: 'Contact',  href: '/contact' },
 ]
 
 export default function Header() {

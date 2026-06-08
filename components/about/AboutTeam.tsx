@@ -16,18 +16,18 @@ const founder = {
 }
 
 const team = [
-  { name: 'Team Member',  role: 'Campaigns Director',     initials: 'CD', image: '/team/member1.jpg' },
-  { name: 'Team Member',  role: 'Finance & Transparency', initials: 'FT', image: '/team/member2.jpg' },
-  { name: 'Team Member',  role: 'Volunteer Coordinator',  initials: 'VC', image: '/team/member3.jpg' },
-  { name: 'Team Member',  role: 'Field Operations',       initials: 'FO', image: '/team/member4.jpg' },
-  { name: 'Team Member',  role: 'Media & Outreach',       initials: 'MO', image: '/team/member5.jpg' },
-  { name: 'Team Member',  role: 'Donor Relations',        initials: 'DR', image: '/team/member6.jpg' },
-  { name: 'Team Member',  role: 'Event Coordinator',      initials: 'EC', image: '/team/member7.jpg' },
-  { name: 'Team Member',  role: 'Photography Lead',       initials: 'PL', image: '/team/member8.jpg' },
-  { name: 'Team Member',  role: 'Social Media Manager',   initials: 'SM', image: '/team/member9.jpg' },
-  { name: 'Team Member',  role: 'Logistics Coordinator',  initials: 'LC', image: '/team/member10.jpg' },
-  { name: 'Team Member',  role: 'Education Programs',     initials: 'EP', image: '/team/member11.jpg' },
-  { name: 'Team Member',  role: 'Community Liaison',      initials: 'CL', image: '/team/member12.jpg' },
+  { name: 'Team Member', role: 'Campaigns Director',     initials: 'CD', image: '/team/member1.jpg' },
+  { name: 'Team Member', role: 'Finance & Transparency', initials: 'FT', image: '/team/member2.jpg' },
+  { name: 'Team Member', role: 'Volunteer Coordinator',  initials: 'VC', image: '/team/member3.jpg' },
+  { name: 'Team Member', role: 'Field Operations',       initials: 'FO', image: '/team/member4.jpg' },
+  { name: 'Team Member', role: 'Media & Outreach',       initials: 'MO', image: '/team/member5.jpg' },
+  { name: 'Team Member', role: 'Donor Relations',        initials: 'DR', image: '/team/member6.jpg' },
+  { name: 'Team Member', role: 'Event Coordinator',      initials: 'EC', image: '/team/member7.jpg' },
+  { name: 'Team Member', role: 'Photography Lead',       initials: 'PL', image: '/team/member8.jpg' },
+  { name: 'Team Member', role: 'Social Media Manager',   initials: 'SM', image: '/team/member9.jpg' },
+  { name: 'Team Member', role: 'Logistics Coordinator',  initials: 'LC', image: '/team/member10.jpg' },
+  { name: 'Team Member', role: 'Education Programs',     initials: 'EP', image: '/team/member11.jpg' },
+  { name: 'Team Member', role: 'Community Liaison',      initials: 'CL', image: '/team/member12.jpg' },
 ]
 
 function FounderImage() {
@@ -35,11 +35,9 @@ function FounderImage() {
 
   return (
     <div className="relative w-full h-full overflow-hidden">
-      {/* Initials fallback behind */}
       <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-navy to-navy-dark">
         <span className="font-display text-7xl font-black text-yellow-300/40">{founder.initials}</span>
       </div>
-
       {!error && (
         <Image
           src={founder.image}
@@ -57,14 +55,13 @@ function MemberCard({ m }: { m: typeof team[0] }) {
   const [error, setError] = useState(false)
 
   return (
-    <div className="group bg-white/[0.04] border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.08] hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
+    <div className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
 
       {/* Image */}
-      <div className="relative aspect-square bg-navy overflow-hidden">
-        {/* Fallback initials */}
+      <div className="relative aspect-square bg-gray-50 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
-            <span className="font-display text-lg font-black text-yellow-300">{m.initials}</span>
+          <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center">
+            <span className="font-display text-lg font-black text-navy">{m.initials}</span>
           </div>
         </div>
 
@@ -78,14 +75,13 @@ function MemberCard({ m }: { m: typeof team[0] }) {
           />
         )}
 
-        {/* Gradient overlay on hover */}
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
       {/* Info */}
-      <div className="p-4 text-center">
-        <div className="font-display font-bold text-white text-sm mb-0.5 truncate">{m.name}</div>
-        <div className="text-yellow-300/80 text-[10px] font-semibold uppercase tracking-wider truncate">{m.role}</div>
+      <div className="p-4 text-center border-t border-gray-100">
+        <div className="font-display font-bold text-navy-dark text-sm mb-0.5 truncate">{m.name}</div>
+        <div className="text-green-600 text-[10px] font-semibold uppercase tracking-wider truncate">{m.role}</div>
       </div>
     </div>
   )
@@ -93,97 +89,111 @@ function MemberCard({ m }: { m: typeof team[0] }) {
 
 export default function AboutTeam() {
   return (
-    <section className="py-20 px-6 bg-navy-dark">
-      <div className="max-w-6xl mx-auto">
+    <>
+      {/* ── LEADERSHIP SECTION (DARK) ── */}
+      <section className="py-20 px-6 bg-navy-dark">
+        <div className="max-w-6xl mx-auto">
 
-        {/* Header */}
-        <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-yellow-300 text-[10px] font-bold uppercase tracking-[0.2em] px-3 py-1.5 rounded-full mb-4">
-            <span className="block w-1 h-1 bg-yellow-300 rounded-full" />
-            The People
-          </div>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-3">
-            Meet Our <span className="text-yellow-300">Team</span>
-          </h2>
-          <p className="text-white/50 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
-            A dedicated group of young changemakers working every day to uplift those in need.
-          </p>
-        </div>
-
-        {/* ── FOUNDER FEATURE CARD ── */}
-        <div className="mb-16">
-          <div className="text-center mb-6">
-            <span className="inline-block bg-yellow-400/10 border border-yellow-400/30 text-yellow-300 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-              ★ Leadership
-            </span>
+          {/* Header */}
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-yellow-300 text-[10px] font-bold uppercase tracking-[0.2em] px-3 py-1.5 rounded-full mb-4">
+              <span className="block w-1 h-1 bg-yellow-300 rounded-full" />
+              The People
+            </div>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-3">
+              Meet Our <span className="text-yellow-300">Team</span>
+            </h2>
+            <p className="text-white/50 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+              A dedicated group of young changemakers working every day to uplift those in need.
+            </p>
           </div>
 
-          <div className="bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 rounded-2xl overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-5">
+          {/* Founder Feature Card */}
+          <div>
+            <div className="text-center mb-6">
+              <span className="inline-block bg-yellow-400/10 border border-yellow-400/30 text-yellow-300 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                ★ Leadership
+              </span>
+            </div>
 
-              {/* Left — Image */}
-              <div className="md:col-span-2 relative h-72 md:h-auto md:min-h-[400px]">
-                <FounderImage />
-              </div>
-
-              {/* Right — Info */}
-              <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                <div className="text-yellow-300 text-[10px] font-bold uppercase tracking-widest mb-2">
-                  Founder & Lead
+            <div className="bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 rounded-2xl overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-5">
+                <div className="md:col-span-2 relative h-72 md:h-auto md:min-h-[400px]">
+                  <FounderImage />
                 </div>
-                <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
-                  {founder.name}
-                </h3>
+                <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
+                  <div className="text-yellow-300 text-[10px] font-bold uppercase tracking-widest mb-2">
+                    Founder & Lead
+                  </div>
+                  <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
+                    {founder.name}
+                  </h3>
 
-                {/* Quote */}
-                <div className="bg-white/[0.04] border-l-2 border-yellow-400 pl-4 py-3 mb-5">
-                  <FaQuoteLeft className="text-yellow-400/60 text-sm mb-2" />
-                  <p className="text-white/80 italic text-sm md:text-base leading-relaxed">
-                    {founder.quote}
+                  <div className="bg-white/[0.04] border-l-2 border-yellow-400 pl-4 py-3 mb-5">
+                    <FaQuoteLeft className="text-yellow-400/60 text-sm mb-2" />
+                    <p className="text-white/80 italic text-sm md:text-base leading-relaxed">
+                      {founder.quote}
+                    </p>
+                  </div>
+
+                  <p className="text-white/50 text-sm leading-relaxed mb-6">
+                    {founder.bio}
                   </p>
-                </div>
 
-                {/* Bio */}
-                <p className="text-white/50 text-sm leading-relaxed mb-6">
-                  {founder.bio}
-                </p>
-
-                {/* Socials */}
-                <div className="flex gap-2">
-                  <a href={founder.instagram} target="_blank" rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-white/5 border border-white/10 rounded-lg text-white/60 hover:bg-pink-600 hover:border-transparent hover:text-white transition-all">
-                    <FaInstagram className="text-sm" />
-                  </a>
-                  <a href={founder.linkedin} target="_blank" rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-white/5 border border-white/10 rounded-lg text-white/60 hover:bg-blue-600 hover:border-transparent hover:text-white transition-all">
-                    <FaLinkedinIn className="text-sm" />
-                  </a>
-                  <a href={founder.twitter} target="_blank" rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-white/5 border border-white/10 rounded-lg text-white/60 hover:bg-sky-500 hover:border-transparent hover:text-white transition-all">
-                    <FaTwitter className="text-sm" />
-                  </a>
+                  <div className="flex gap-2">
+                    <a href={founder.instagram} target="_blank" rel="noopener noreferrer"
+                      className="w-9 h-9 flex items-center justify-center bg-white/5 border border-white/10 rounded-lg text-white/60 hover:bg-pink-600 hover:border-transparent hover:text-white transition-all">
+                      <FaInstagram className="text-sm" />
+                    </a>
+                    <a href={founder.linkedin} target="_blank" rel="noopener noreferrer"
+                      className="w-9 h-9 flex items-center justify-center bg-white/5 border border-white/10 rounded-lg text-white/60 hover:bg-blue-600 hover:border-transparent hover:text-white transition-all">
+                      <FaLinkedinIn className="text-sm" />
+                    </a>
+                    <a href={founder.twitter} target="_blank" rel="noopener noreferrer"
+                      className="w-9 h-9 flex items-center justify-center bg-white/5 border border-white/10 rounded-lg text-white/60 hover:bg-sky-500 hover:border-transparent hover:text-white transition-all">
+                      <FaTwitter className="text-sm" />
+                    </a>
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
-        </div>
 
-        {/* ── TEAM GRID ── */}
-        <div className="text-center mb-8">
-          <span className="inline-block bg-white/5 border border-white/10 text-white/60 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-            Core Team
-          </span>
         </div>
+      </section>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {team.map((m) => (
-            <MemberCard key={m.role} m={m} />
-          ))}
+      {/* ── CORE TEAM SECTION (WHITE) ── */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+
+          {/* Section Label */}
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-2 text-green-600 text-xs font-bold uppercase tracking-widest mb-3">
+              <span className="block w-6 h-0.5 bg-green-600" />
+              Core Team
+              <span className="block w-6 h-0.5 bg-green-600" />
+            </div>
+            <h3 className="font-display text-3xl md:text-4xl font-bold text-navy-dark mb-2">
+              The People Behind <span className="text-green-600">Every Mission</span>
+            </h3>
+            <p className="text-gray-500 text-sm max-w-lg mx-auto">
+              Twelve passionate individuals making it all happen on the ground.
+            </p>
+          </div>
+
+          {/* Team Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {team.map((m) => (
+              <MemberCard key={m.role} m={m} />
+            ))}
+          </div>
+
         </div>
+      </section>
 
-        {/* ── JOIN CTA ── */}
-        <div className="mt-14 max-w-2xl mx-auto text-center bg-gradient-to-br from-yellow-400/10 to-amber-500/5 border border-yellow-400/20 rounded-2xl p-8">
+      {/* ── JOIN OUR TEAM CTA (DARK) ── */}
+      <section className="py-16 px-6 bg-navy-dark">
+        <div className="max-w-2xl mx-auto text-center bg-gradient-to-br from-yellow-400/10 to-amber-500/5 border border-yellow-400/20 rounded-2xl p-8">
           <div className="inline-flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-full mb-4 shadow-lg shadow-yellow-400/30">
             <span className="text-xl">🤝</span>
           </div>
@@ -198,8 +208,7 @@ export default function AboutTeam() {
             Become a Volunteer →
           </a>
         </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
