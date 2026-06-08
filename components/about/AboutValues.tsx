@@ -4,68 +4,64 @@ const values = [
   {
     Icon: FaHandshake,
     name: 'Unity',
-    desc: 'One ummah, one purpose — standing together across borders.',
-    iconBg: 'bg-blue-50',
-    iconColor: 'text-blue-600',
-    border: 'border-t-blue-500',
+    desc: 'One ummah, one purpose — united across borders.',
+    iconBg: 'bg-blue-500',
+    accent: 'border-t-blue-500',
   },
   {
     Icon: FaHeart,
     name: 'Compassion',
     desc: 'Every action driven by sincere care for those suffering.',
-    iconBg: 'bg-pink-50',
-    iconColor: 'text-pink-600',
-    border: 'border-t-pink-500',
+    iconBg: 'bg-pink-500',
+    accent: 'border-t-pink-500',
   },
   {
     Icon: FaBullseye,
     name: 'Target',
-    desc: 'Clear goals, measurable results. We deliver.',
-    iconBg: 'bg-amber-50',
-    iconColor: 'text-amber-600',
-    border: 'border-t-amber-500',
+    desc: 'Clear goals, measurable results. We commit to action.',
+    iconBg: 'bg-amber-500',
+    accent: 'border-t-amber-500',
   },
   {
     Icon: FaBullhorn,
     name: 'Action',
-    desc: 'We mobilize youth, raise funds, ensure aid reaches people.',
-    iconBg: 'bg-green-50',
-    iconColor: 'text-green-600',
-    border: 'border-t-green-500',
+    desc: 'We mobilize youth and ensure aid reaches those in need.',
+    iconBg: 'bg-green-500',
+    accent: 'border-t-green-500',
   },
 ]
 
 export default function AboutValues() {
   return (
-    <section className="py-14 px-6 bg-white">
+    <section className="py-12 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-10">
-          <div className="flex items-center justify-center gap-2 text-green-600 text-xs font-bold uppercase tracking-widest mb-3">
-            <span className="block w-6 h-0.5 bg-green-600" />
+        <div className="text-center mb-8">
+          <div className="flex items-center justify-center gap-2 text-green-600 text-[10px] font-bold uppercase tracking-widest mb-2">
+            <span className="block w-5 h-0.5 bg-green-600" />
             Our Values
-            <span className="block w-6 h-0.5 bg-green-600" />
+            <span className="block w-5 h-0.5 bg-green-600" />
           </div>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-navy-dark mb-3">
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-navy-dark mb-2">
             What We Stand For
           </h2>
-          <p className="text-gray-500 text-sm max-w-xl mx-auto leading-relaxed">
-            Four pillars that shape every program, every campaign, and every act of service we undertake.
+          <p className="text-gray-500 text-sm max-w-md mx-auto">
+            Four pillars that shape every act of service we undertake.
           </p>
         </div>
 
         {/* Values Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {values.map((v) => (
             <div
               key={v.name}
-              className={`bg-white border border-gray-200 border-t-4 ${v.border} rounded-xl p-5 text-center hover:-translate-y-1 hover:shadow-lg transition-all group`}
+              className={`bg-white border border-gray-200 border-t-2 ${v.accent} rounded-lg p-4 text-center hover:-translate-y-0.5 hover:shadow-md transition-all group`}
             >
-              <div className={`w-12 h-12 ${v.iconBg} rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300`}>
-                <v.Icon className={`${v.iconColor} text-xl`} />
+              <div className={`w-10 h-10 ${v.iconBg} rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300`}>
+                <v.Icon className="text-white text-base" />
               </div>
-              <h3 className="font-display font-bold text-navy-dark mb-1">{v.name}</h3>
+              <h3 className="font-display font-bold text-navy-dark text-base mb-1">{v.name}</h3>
               <p className="text-gray-500 text-xs leading-relaxed">{v.desc}</p>
             </div>
           ))}

@@ -7,7 +7,7 @@ const founder = {
   name:     'Aqil Buzdar',
   role:     'Founder & Lead',
   bio:      'Youth activist and welfare organizer dedicated to creating lasting change through community-driven action. Founded Al Rehman Welfare to channel the energy of Pakistan\'s youth into meaningful, transparent impact for orphans, widows, and needy families across the country and beyond.',
-  image:    '/team/aqil.jpg',
+  image:    '/AQIL BHAI.png',
   initials: 'AB',
   quote:    'Leadership is not a title — it is service to those who need us most.',
   instagram:'https://instagram.com/__aqillll__',

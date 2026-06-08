@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -29,14 +30,17 @@ export default function Header() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-[70px]">
-
           <Link href="/" className="flex items-center">
-            <div className="bg-navy text-white px-3 py-2 rounded leading-tight text-center">
-              <div className="font-display text-xl font-black tracking-tight">AR</div>
-              <div className="text-[9px] font-semibold tracking-widest uppercase opacity-80">Welfare</div>
-              <div className="text-[8px] tracking-widest uppercase opacity-60">Pakistan</div>
-            </div>
-          </Link>
+  <Image
+    src="/logo.jpeg"
+    alt="Al Rehman Welfare"
+    width={141}
+    height={51}
+    priority
+    className="h-12 w-auto object-contain"
+  />
+</Link>
+
 
           <nav className="hidden md:flex items-center gap-1">
             {navLinks.map(l => (
