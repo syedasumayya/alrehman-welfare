@@ -16,7 +16,7 @@ const founder = {
 }
 
 const team = [
-  { name: 'Team Member', role: 'Campaigns Director',     initials: 'CD', image: '/team/member1.jpg' },
+  { name: 'Team Member', role: 'Campaigns Director',     initials: 'CD', image: '/Rafay.png' },
   { name: 'Team Member', role: 'Finance & Transparency', initials: 'FT', image: '/team/member2.jpg' },
   { name: 'Team Member', role: 'Volunteer Coordinator',  initials: 'VC', image: '/team/member3.jpg' },
   { name: 'Team Member', role: 'Field Operations',       initials: 'FO', image: '/team/member4.jpg' },

@@ -11,17 +11,7 @@ export default function ContactSection() {
         <p className="text-gray-500 leading-relaxed mb-8 max-w-xl mx-auto">
           Whether you want to donate, volunteer, or simply learn more — our team is here for you. Visit our dedicated contact page.
         </p>
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {[
-            ['📷', '@alrehmanwelfare'],
-            ['✉️', 'contact@alrehmanwelfare.org'],
-            ['📱', '+92 300 0000000'],
-          ].map(([icon, text]) => (
-            <div key={text} className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-700 shadow-sm">
-              <span>{icon}</span>{text}
-            </div>
-          ))}
-        </div>
+        
         <Link href="/contact"
           className="inline-block bg-navy hover:bg-navy-mid text-white font-bold px-8 py-3.5 rounded-lg text-sm transition-all hover:-translate-y-0.5">
           Go to Contact Page →
