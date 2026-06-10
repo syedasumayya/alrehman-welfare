@@ -16,17 +16,17 @@ const founder = {
 }
 
 const team = [
-  { name: 'Team Member', role: 'Campaigns Director',     initials: 'CD', image: '/team.png' },
+  { name: 'Team Member', role: 'Campaigns Director',     initials: 'CD', image: '/member6.png' },
   { name: 'Team Member', role: 'Finance & Transparency', initials: 'FT', image: '/member2.png' },
   { name: 'Team Member', role: 'Volunteer Coordinator',  initials: 'VC', image: '/member3.png' },
   { name: 'Team Member', role: 'Field Operations',       initials: 'FO', image: '/member4.png' },
   { name: 'Team Member', role: 'Media & Outreach',       initials: 'MO', image: '/member1.jpg' },
-  { name: 'Team Member', role: 'Donor Relations',        initials: 'DR', image: '/member6.jpg' },
-  { name: 'Team Member', role: 'Event Coordinator',      initials: 'EC', image: '/team/member7.jpg' },
+  { name: 'Team Member', role: 'Donor Relations',        initials: 'DR', image: '/member5.jpg' },
+  { name: 'Team Member', role: 'Event Coordinator',      initials: 'EC', image: '/member7.png' },
   { name: 'Team Member', role: 'Photography Lead',       initials: 'PL', image: '/member8.jpg' },
   { name: 'Team Member', role: 'Social Media Manager',   initials: 'SM', image: '/member9.jpg' },
-  { name: 'Team Member', role: 'Logistics Coordinator',  initials: 'LC', image: '/team/member10.jpg' },
-  { name: 'Team Member', role: 'Education Programs',     initials: 'EP', image: '/team/member11.jpg' },
+  { name: 'Team Member', role: 'Logistics Coordinator',  initials: 'LC', image: '/member10.jpg' },
+  { name: 'Team Member', role: 'Education Programs',     initials: 'EP', image: '/member11.jpg' },
   { name: 'Team Member', role: 'Community Liaison',      initials: 'CL', image: '/member12.jpg' },
 ]
 

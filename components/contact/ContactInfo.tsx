@@ -1,7 +1,7 @@
 const contacts = [
-  { icon: '📍', label: 'Address',   value: 'Rawalpindi, Punjab, Pakistan' },
-  { icon: '✉️', label: 'Email',     value: 'contact@alrehmanwelfare.org' },
-  { icon: '📱', label: 'Phone',     value: '+92 300 0000000' },
+  { icon: '📍', label: 'Address',   value: 'Islamabad, Punjab, Pakistan' },
+  { icon: '✉️', label: 'Email',     value: 'alrehmanwelfareinitiative@gmail.com' },
+  { icon: '📱', label: 'Phone',     value: '+92 319 544 7944' },
   { icon: '📷', label: 'Instagram', value: '@alrehmanwelfare' },
   { icon: '🕐', label: 'Hours',     value: 'Mon – Sat, 9am – 6pm PKT' },
 ]
@@ -33,24 +33,7 @@ export default function ContactInfo() {
         ))}
       </div>
 
-      {/* Social Links */}
-      <div>
-        <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Follow Us</div>
-        <div className="flex gap-2">
-          {[
-            { icon: '📷', label: 'Instagram' },
-            { icon: 'f',  label: 'Facebook' },
-            { icon: '▶',  label: 'YouTube' },
-            { icon: 'X',  label: 'Twitter' },
-          ].map(s => (
-            <a key={s.label} href="#"
-              className="w-10 h-10 flex items-center justify-center bg-navy/5 border border-navy/10 rounded-lg text-navy/60 text-sm font-bold hover:bg-navy hover:text-white hover:border-navy transition-all"
-              title={s.label}>
-              {s.icon}
-            </a>
-          ))}
-        </div>
-      </div>
+     
     </div>
   )
 }
