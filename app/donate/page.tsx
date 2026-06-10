@@ -1,6 +1,7 @@
 import DonateBanner from '@/components/donate/DonateBanner'
 import DonateInfo   from '@/components/donate/DonateInfo'
 import DonateForm   from '@/components/donate/DonateForm'
+import DonateAccounts from '@/components/donate/DonateAccounts'
 
 export default function DonatePage() {
   return (
@@ -12,6 +13,7 @@ export default function DonatePage() {
           <DonateForm />
         </div>
       </section>
+      <DonateAccounts />
     </>
   )
 }

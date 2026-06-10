@@ -28,7 +28,7 @@ export default function ImpactSection() {
             <span className="block w-6 h-0.5 bg-green-600" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-navy-dark mb-4">
-            Your Impact in 2026
+            Our Impact in 2026
           </h2>
           <p className="text-gray-500 text-base max-w-2xl mx-auto leading-relaxed">
             Through your generous support, Al Rehman Welfare continues to create lasting change — reaching thousands of orphans, widows, and needy families across Pakistan and beyond.

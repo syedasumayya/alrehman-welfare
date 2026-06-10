@@ -16,18 +16,18 @@ const founder = {
 }
 
 const team = [
-  { name: 'Team Member', role: 'Campaigns Director',     initials: 'CD', image: '/Rafay.png' },
-  { name: 'Team Member', role: 'Finance & Transparency', initials: 'FT', image: '/team/member2.jpg' },
-  { name: 'Team Member', role: 'Volunteer Coordinator',  initials: 'VC', image: '/team/member3.jpg' },
-  { name: 'Team Member', role: 'Field Operations',       initials: 'FO', image: '/team/member4.jpg' },
-  { name: 'Team Member', role: 'Media & Outreach',       initials: 'MO', image: '/team/member5.jpg' },
-  { name: 'Team Member', role: 'Donor Relations',        initials: 'DR', image: '/team/member6.jpg' },
+  { name: 'Team Member', role: 'Campaigns Director',     initials: 'CD', image: '/team.png' },
+  { name: 'Team Member', role: 'Finance & Transparency', initials: 'FT', image: '/member2.png' },
+  { name: 'Team Member', role: 'Volunteer Coordinator',  initials: 'VC', image: '/member3.png' },
+  { name: 'Team Member', role: 'Field Operations',       initials: 'FO', image: '/member4.png' },
+  { name: 'Team Member', role: 'Media & Outreach',       initials: 'MO', image: '/member1.jpg' },
+  { name: 'Team Member', role: 'Donor Relations',        initials: 'DR', image: '/member6.jpg' },
   { name: 'Team Member', role: 'Event Coordinator',      initials: 'EC', image: '/team/member7.jpg' },
-  { name: 'Team Member', role: 'Photography Lead',       initials: 'PL', image: '/team/member8.jpg' },
-  { name: 'Team Member', role: 'Social Media Manager',   initials: 'SM', image: '/team/member9.jpg' },
+  { name: 'Team Member', role: 'Photography Lead',       initials: 'PL', image: '/member8.jpg' },
+  { name: 'Team Member', role: 'Social Media Manager',   initials: 'SM', image: '/member9.jpg' },
   { name: 'Team Member', role: 'Logistics Coordinator',  initials: 'LC', image: '/team/member10.jpg' },
   { name: 'Team Member', role: 'Education Programs',     initials: 'EP', image: '/team/member11.jpg' },
-  { name: 'Team Member', role: 'Community Liaison',      initials: 'CL', image: '/team/member12.jpg' },
+  { name: 'Team Member', role: 'Community Liaison',      initials: 'CL', image: '/member12.jpg' },
 ]
 
 function FounderImage() {
