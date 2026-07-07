@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Al Rehman Welfare
+
+Official website for **Al Rehman Welfare**, a youth-led welfare organization supporting orphans, widows, and needy families across Pakistan and worldwide.
+
+🔗 **Live site:** [alrehmanwelfare.org](https://www.alrehmanwelfare.org/)
+
+Built with [Next.js](https://nextjs.org/), bootstrapped from `create-next-app`.
+
+## About
+
+Al Rehman Welfare runs programs including:
+
+- 🍚 Monthly ration package distribution for widows and needy families
+- 🧒 Orphan sponsorship (food, clothing, education)
+- 🍲 Cooked meal distribution drives
+- 💧 Water and medical camp projects
+- 🏠 Family shelter support
+
+The site showcases active campaigns, impact statistics, donation options, and volunteer sign-up.
 
 ## Getting Started
 
@@ -18,19 +36,30 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** Next.js
+- **Deployment:** Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is deployed and live at **[alrehmanwelfare.org](https://www.alrehmanwelfare.org/)**.
 
-## Deploy on Vercel
+Deployed on [Vercel](https://vercel.com/), the platform from the creators of Next.js. See the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 📧 alrehmanwelfareinitiative@gmail.com
+- 📞 +92 319 5447944
+- 📍 Islamabad, Pakistan
+- Instagram: [@alrehmanwelfare](https://www.instagram.com/alrehmanwelfare)
+
+## Contributing
+
+Issues and pull requests are welcome. If you'd like to contribute code, design, or content improvements to help the mission, feel free to open a PR.
+
+## License
+
+© 2024–2026 Al Rehman Welfare. All rights reserved.
